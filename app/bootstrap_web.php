@@ -63,9 +63,7 @@ try {
     $modules = $application->getModules();
 
     foreach ($modules as $name => $module) {
-        $routesClassName = preg_replace('/Module$/', 'Routes', $module["className"]);
-
-        $moduleConfig = $config->application->modulesDir.$key.DIRECTORY_SEPARATOR.'config/routes.php';
+        $moduleConfig = $config->application->modulesDir.$name.DIRECTORY_SEPARATOR.'config/routes.php';
 
         if (file_exists($moduleConfig)) {
             require $moduleConfig;
