@@ -47,11 +47,9 @@ try {
     $application->registerModules([
         'frontend' => [
             'className' => 'Blog\Modules\Frontend\Module',
-            'path'      => $config->application->modulesDir . 'Frontend\Module.php',
         ],
         'users' => [
             'className' => 'Blog\Modules\Users\Module',
-            'path'      => $config->application->modulesDir . 'Users\Module.php',
         ],
     ]);
 

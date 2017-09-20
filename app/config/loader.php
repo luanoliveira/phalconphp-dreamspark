@@ -17,7 +17,8 @@ $loader->registerNamespaces([
  */
 $loader->registerClasses([
     'Blog\Modules\Frontend\Module' => APP_PATH . '/modules/frontend/Module.php',
-    'Blog\Modules\Cli\Module'      => APP_PATH . '/modules/cli/Module.php'
+    'Blog\Modules\Cli\Module'      => APP_PATH . '/modules/cli/Module.php',
+    'Blog\Modules\Users\Module'    => APP_PATH . '/modules/users/Module.php'
 ]);
 
 $loader->register();
